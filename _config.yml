@@ -27,7 +27,8 @@ baseurl: /Blog
 avatar: http://raw.github.com/FromEndWorld/LOFFER/master/images/logo.png
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: http://raw.github.com/FromEndWorld/LOFFER/master/images/favicon.png
+favicon: https://github.com/Altair288/Blog/blob/master/images/logo.png
+
 
 
 # 菜单中的按钮
