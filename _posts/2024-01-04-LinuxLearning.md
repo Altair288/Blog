@@ -333,7 +333,7 @@ toc: true
     sudo vim <网站根目录>/phpinfo.php
     ```
 
-    <网站根目录>是您在`nginx.conf`配置文件中`location ~ .php$`大括号内，配置的`root`参数值，如下图所示。
+    `<网站根目录>`是您在`nginx.conf`配置文件中`location ~ .php$`大括号内，配置的`root`参数值，如下图所示。
 
     [![piv5Fwd.png](https://s11.ax1x.com/2024/01/04/piv5Fwd.png)](https://imgse.com/i/piv5Fwd)
 
