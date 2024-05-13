@@ -77,19 +77,26 @@ toc: true
 
 ### 步骤二：安装Nginx
 
-1. 运行以下命令，安装Nginx。
+1. 运行以下命令，安装EPEL源和Remi仓库。
+
+    ```shell
+    sudo yum install -y epel-release
+    sudo rpm -Uvh https://mirrors.aliyun.com/remi/enterprise/remi-release-7.rpm
+    ```
+
+2. 运行以下命令，安装Nginx。
 
     ```shell
     sudo yum -y install nginx
     ```
 
-2. 运行以下命令，查看Nginx版本。
+3. 运行以下命令，查看Nginx版本。
 
     ```shell
     nginx -v
     ```
 
-3. 返回结果类似如下所示，表示Nginx安装成功。
+4. 返回结果类似如下所示，表示Nginx安装成功。
 
     ```shell
     nginx version: nginx/1.20.1
@@ -102,7 +109,7 @@ toc: true
 1. 运行以下命令，更新YUM源。
 
     ```shell
-    sudo rpm -Uvh  http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+    sudo rpm -Uvh https://dev.mysql.com/get/mysql80-community-release-el7-11.noarch.rpm
     ```
 
 2. 运行以下命令，安装MySQL。
@@ -235,18 +242,22 @@ toc: true
     1. 运行以下命令，添加EPEL源。
 
     ```shell
-    sudo yum install \
-    https://repo.ius.io/ius-release-el7.rpm \
-    https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    sudo yum install -y epel-release
+    sudo rpm -Uvh https://mirrors.aliyun.com/remi/enterprise/remi-release-7.rpm
+    ```
+    2. 运行以下命令，启用PHP 8.0仓库。
+    
+    ```shell
+    sudo yum-config-manager --enable remi-php80
     ```
 
-    2. 运行以下命令，安装PHP。
+    3. 运行以下命令，安装PHP。
 
     ```shell
-    sudo yum -y install php70w-devel php70w.x86_64 php70w-cli.x86_64 php70w-common.x86_64 php70w-gd.x86_64 php70w-ldap.x86_64 php70w-mbstring.x86_64 php70w-mcrypt.x86_64  php70w-pdo.x86_64   php70w-mysqlnd  php70w-fpm php70w-opcache php70w-pecl-redis php70w-pecl-mongodb
+    sudo yum install -y php php-cli php-fpm php-mysqlnd php-zip php-devel php-gd php-mcrypt php-mbstring php-curl php-xml php-pear php-bcmath php-json
     ```
 
-    3. 运行以下命令，查看PHP版本。
+    4. 运行以下命令，查看PHP版本。
 
     ```shell
     php -v
@@ -255,9 +266,9 @@ toc: true
     返回结果如下所示，表示安装成功。
 
     ```shell
-    PHP 7.0.33 (cli) (built: Dec  6 2018 22:30:44) ( NTS )
+    PHP 8.0.30 (cli) (built: Dec  6 2018 22:30:44) ( NTS )
     Copyright (c) 1997-2017 The PHP Group
-    Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+    Zend Engine v4.0.30, Copyright (c) 1998-2017 Zend Technologies
     with Zend OPcache v7.0.33, Copyright (c) 1999-2017, by Zend Technologies                
     ```
 
