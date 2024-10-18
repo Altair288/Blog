@@ -15,7 +15,7 @@ toc: true
 
 本人使用docker的coder/code-server镜像进行部署，根据官方文档可知，code-server的用户数据与程序本体是分开的
 
-![PixPin_2024-10-10_10-53-12](http://arch.altair288.eu.org:8888/i/2024/10/10/hdhwge.jpg)
+![PixPin_2024-10-10_10-53-12](https://share.altair288.eu.org/easyimage/i/2024/10/10/hdhwge.jpg)
 
 https://coder.com/docs/code-server/upgrade
 
