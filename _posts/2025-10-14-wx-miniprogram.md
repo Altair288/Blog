@@ -4,7 +4,7 @@ title: 微信小程序学习笔记-6
 date: 2025-10-14
 Author: 
 categories: 
-tags: [miniprogram]
+tags: [miniprogram6]
 comments: false
 toc: true
 ---

@@ -4,7 +4,7 @@ title: 微信小程序学习笔记-3
 date: 2025-10-11
 Author: 
 categories: 
-tags: [miniprogram]
+tags: [miniprogram3]
 comments: false
 toc: true
 ---
